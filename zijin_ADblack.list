@@ -1,0 +1,22 @@
+#!name=自用广告分流
+#!desc=修正某些被分流到外区的国内网站
+#!author=zijin666
+
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
+#############################################
+# > "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
+# > "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
+# > "reject-img"    策略返回 HTTP 状态码 200,同时附带 1px gif
+# > "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
+# > "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+#############################################
+
+
+#!name=自用广告拦截
+
+# > 车来了
+host, api.sogaha.cn, reject
+host, ctrace.sogaha.cn, reject
+host-suffix, atrace.chelaile.net.cn, reject
+host, logs.chelaile.net.cn, reject
+host, ad.chelaile.net.cn, reject

@@ -1,8 +1,0 @@
-#!name=自用广告拦截
-
-# > 车来了
-host, api.sogaha.cn, reject
-host, ctrace.sogaha.cn, reject
-host-suffix, atrace.chelaile.net.cn, reject
-host, logs.chelaile.net.cn, reject
-host, ad.chelaile.net.cn, reject
