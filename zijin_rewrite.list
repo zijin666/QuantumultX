@@ -18,7 +18,7 @@
 #############################################
 
 # 去重后的hostname，将对以下域名进行MITM（MAN-IN-THE-MIDDLE：中间人攻击）
-hostname = edith.xiaohongshu.com, app.bilibili.com
+hostname = edith.xiaohongshu.com, app.bilibili.com, tiebac.baidu.com
 
 # >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
 # > 小红书去除推荐
@@ -27,3 +27,7 @@ hostname = edith.xiaohongshu.com, app.bilibili.com
 # >>>>>>>>>>>>>>> ✅ 2 ✅ <<<<<<<<<<<<<<
 # > bilibili去除推荐
 ^https://app.bilibili.com/x/v2/feed/index url reject-200
+
+# >>>>>>>>>>>>>>> ✅ 3 ✅ <<<<<<<<<<<<<<
+# > 百度贴吧去除推荐
+^https://tiebac.baidu.com/c/f/excellent/personalized url reject-200
