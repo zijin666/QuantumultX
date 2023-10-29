@@ -30,4 +30,4 @@ hostname = edith.xiaohongshu.com, app.bilibili.com, tiebac.baidu.com
 
 # >>>>>>>>>>>>>>> ✅ 3 ✅ <<<<<<<<<<<<<<
 # > 百度贴吧去除推荐
-^https://tiebac.baidu.com/c/f/excellent/personalized url reject-200
+# ^https://tiebac.baidu.com/c/f/excellent/personalized url reject-200
